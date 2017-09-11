@@ -7526,10 +7526,9 @@ AcroForm.internal.setBitPosition = function (variable, position, value) {
 			text: [],
 			style: []
 		};
-		return this.pdf.internal.write("q");
+		return this;
 	};
 	Renderer.prototype.dispose = function () {
-		this.pdf.internal.write("Q");
 		return {
 			x: this.x,
 			y: this.y,
